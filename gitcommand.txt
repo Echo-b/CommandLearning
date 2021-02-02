@@ -1,0 +1,20 @@
+关联一个远程仓库命令为：git remote add origin git@github.com:username/repo.git
+第一次远程提交命令为：git push -u origin master
+后续提交的方式：git push origin master
+查看分支：git branch
+创建并切换分支：git checkout -b <branch name> git switch -c <branch name>
+切换分支：git switch <branch name> git checkout <branch name>
+合并分支：git merge <branch name>
+删除分支：git branch -d <branch name>
+撤销:git checkout -- <file name>
+拉取一个远程仓库到本地：git clone git@github.com:username/repo.git <destination>
+放入缓存：git add <file name>
+提交：git commit -m "the record"
+本地删除：rm <file name>
+确定在仓库中删除：git rm <file name>
+查看仓库转态：git status
+初始化一个仓库：git init
+创建密钥:ssh-keygen -t rsa -C "youremail"
+
+手动解决冲突之后就可以提交了
+查看提交的分支图：git log --graph
