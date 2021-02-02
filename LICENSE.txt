@@ -1,2 +1,0 @@
-name:echo
-age:20th
