@@ -1,7 +1,3 @@
-<<<<<<< HEAD
 test dev branch  
 the second test branch hello
-=======
-test dev branch
-the second test branch hello
->>>>>>> hello
+the third modify
