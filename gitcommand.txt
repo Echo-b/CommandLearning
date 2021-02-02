@@ -15,6 +15,13 @@
 查看仓库转态：git status
 初始化一个仓库：git init
 创建密钥:ssh-keygen -t rsa -C "youremail"
-
+合并分支并创建一个新的提交：git merge --no-ff -m "commit record" <branch name>
 手动解决冲突之后就可以提交了
 查看提交的分支图：git log --graph
+查看提交的分支图：git log --graph --pretty=oneline --abbrev-commit
+暂存分支：git stash
+恢复分支：git stash apply
+删除stash内容：git stash drop
+恢复加删除stash内容：git stash pop
+查看stash内同:git stash list
+可以多次stash,恢复的时先用git stash list查看确定要恢复的stash,指定恢复的stash即可,如：git stash apply stash@{0}
