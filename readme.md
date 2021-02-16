@@ -1,1 +1,2 @@
-just to learn to how to use git command
+git command
+basic linux command
