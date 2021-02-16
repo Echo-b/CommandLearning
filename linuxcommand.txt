@@ -23,7 +23,7 @@ linux command
 创建新文件：touch <filename>
 linux用户类型：u(作者)，g(小组),o(其他人)，分别有rwx权限（即读写运行）
 修改不同用户对文件的权限:chmod u/g/o +/- r/w/x <filename>
-还可以用二进制进行修改:chmod u.g.o +/- [0-7]/[0-7]/[0-7] <filename>
+还可以用二进制进行修改:chmod u/g/o +/- [0-7]/[0-7]/[0-7] <filename>
 查看文件内容类似cat:less <filename> 按字母q离开
 查找文件内是否含有具体的内容:grep 'content' <filename>
 也可以用正则表达式进行模糊查找
