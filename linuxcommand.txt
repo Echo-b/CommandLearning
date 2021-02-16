@@ -1,0 +1,115 @@
+linux command
+查看日期：date
+查看日历：cal
+查看当前目录：pwd
+进入命令：cd
+查看文件内容：ls/l
+查看全部文件内容：ls -a/la
+查看详细文件内容信息：ls -l/ll
+创建新文件夹：mkdir <filename>
+删除空文件夹：rmdir <filename>
+删除文件：rm <filename>
+删除文件或文件夹：rm -rf <filename>
+复制文件：cp <filename1> <filename2>
+移动文件/重命名文件：mv <filename> "path"/mv <filename> <filename>
+查看文件内容：cat <filename>
+比较两文件的不同：diff <filename1> <filename2>
+查看文件的头几行：head <filename> -n "number"
+查看文件的末尾几行：tail <filename> -n "number"
+查看文件内的行数，单词数，字符数：wc <filename>
+查看行数: wc -l <filename>
+查看单词数: wc -w <filename>
+查看字符数: wc -c <filename>
+创建新文件：touch <filename>
+linux用户类型：u(作者)，g(小组),o(其他人)，分别有rwx权限（即读写运行）
+修改不同用户对文件的权限:chmod u/g/o +/- r/w/x <filename>
+还可以用二进制进行修改:chmod u.g.o +/- [0-7]/[0-7]/[0-7] <filename>
+查看文件内容类似cat:less <filename> 按字母q离开
+查找文件内是否含有具体的内容:grep 'content' <filename>
+也可以用正则表达式进行模糊查找
+重定向：ls > <filename>,将ls所展示内容定向到一个文件
+脚本命令：文件后缀名：sh
+运行方式:sh <filename>
+简单的书写方式：在.sh文件里面书写相应的命令,注意一些地方不能加空格
+输出:echo "string"/$varible
+计算两个数的和：
+ a=10
+ b=3
+ c=`expr $a + $b`
+ echo $c
+运算符号的书写：+ - \* /
+运算符左右两边加空格
+括号书写方式:\(\)
+条件判断语句：
+    if[...]
+    then
+        语句
+    else
+        语句
+    fi（结束）
+大于符号：-gt
+小于符号：-lt
+大于等于：-ge
+小于等于：-le
+等于: -eq
+不等于：-ne
+例如判断两个数的大小关系的语句
+a=10
+b=3
+if [ $a -gt $b ]
+then
+    echo $a
+else
+    echo $b
+fi
+for循环语句基本格式
+for x in range
+do
+    语句
+done
+例如输出1-10个数
+for x in 1 2 3 ... 10
+do
+    echo $x
+done
+while语句：
+while [ 条件 ]
+do
+    语句
+done
+例如从1开始输出10个数
+x=1
+while [ $x -le 10 ]
+do
+    echo $x
+    x=`expr $x + 1`
+done
+做运算时要用``包裹,一般格式为：`expr $varible 操作符 $varible`
+输出：echo
+输入：read
+判断字符串是否相等: $string1 = $string2,用一个等号，左右用空格隔开
+不相等的符号：!=
+判断字符串是否为空：-z(是否为0)/-n(是否不为零) $string
+脚本语言中含有数组是运行命令：bash <filename>
+数组创建：arr=(1 2 3 4)
+数组输出，访问具体的数组元素：${arr[i]}
+具体实例：
+for i in ${arr[@]}
+do
+    echo $i
+done
+数组的元素个数：${#arr[@]}
+实现冒泡排序：
+   1 arr=(1 4 3 2 7 6 9 8)
+   2 for((i=0;i<${#arr[@]};i++)){
+   3     for((j=0;j<${#arr[@]}-1;j++)){
+   4         if [[ ${arr[j]} -gt ${arr[j + 1]} ]]
+   5         then
+   6             temp=${arr[j + 1]}
+   7             arr[j + 1]=${arr[j]}
+   8             arr[j]=$temp
+   9         fi
+  10     }
+  11 }
+  12 echo ${arr[@]}
+
