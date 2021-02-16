@@ -1,0 +1,29 @@
+vim command
+切换至输入：i
+保存退出：Esc 后:wq
+退出且放弃修改:q!
+退出：q
+切换至命令行：Esc
+编辑文件：vim <filename>
+语法高亮：syntax on
+设置行号：set number
+编辑vim配置文件：vim ~/.vimrc(~/当前用户目录)，编辑vim的一些基本设置包括语法高亮等等
+删除单行:CC(剪切)
+撤销：U
+删除多行：C+number+C（c2c:删除2行）
+粘贴：P
+选择: V+方向键
+复制: YY
+移动位置：上下左右箭头/H(左)J(下)K(上)L(右)
+移动一个单词:W
+往回跳转：B
+往上翻页：PageUp/Ctrl+F
+往下翻页：PageDown/Ctrl+B
+先切换至命令行模式
+跳转至某一行：number+gg(88gg:跳转至88行)
+往下跳固定行数：number+H/J/K/L
+查找内容:/content（Enter确定）
+跳转至下一个查找内容:N
+回到上一个查找内容：Shift+N
+自带的代码自动补全：Crtl+N
+推荐插件：vimplug等
