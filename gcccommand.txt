@@ -1,0 +1,8 @@
+预处理
+gcc -E source.c -o source.i
+编译
+gcc -S source.i -o source.s
+汇编
+gcc -c source.s -o source.o
+链接
+gcc source.o -o source
