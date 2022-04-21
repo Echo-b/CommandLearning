@@ -1,0 +1,5 @@
+测试:
+  ✔ 睡觉 @started(22-04-21 13:44) @done(22-04-21 13:44) @lasted(17s)
+  ✔ 打豆豆 @est(1h) @started(22-04-21 13:44) @done(22-04-21 13:44) @lasted(59s)
+  ✔ 吃饭 @done(22-04-21 13:44)
+  ✘ 测试 @critical @high @cancelled(22-04-21 13:48)
